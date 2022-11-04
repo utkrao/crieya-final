@@ -1,0 +1,16 @@
+.btn-google{
+    border-radius: 7px;
+    text-decoration: none;
+    padding: 6px 16px;
+    
+}
+
+.googlebtn{
+    padding: 0px 6px;
+    text-decoration: none;
+    color: white;
+    background-color: #e30e0e;
+    border-radius: 7px;
+    font-size: 20px;
+    font-weight: 500;
+}

@@ -1,0 +1,88 @@
+
+body {
+  background-color: #E4E9FD;
+  background: -webkit-linear-gradient(65deg, #A683E3 50%, #E4E9FD 50%);
+  min-height: 713px;
+  background-repeat: no-repeat;
+  /* background-size:cover; */
+  font-family: 'helvetica neue';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.centered {
+    padding-top: 200px;
+    text-align: center;
+}
+
+.secret-text {
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  background-color: #000;
+}
+
+/* .google{
+  width: 45rem;
+} */
+
+.register{
+  border: 2px solid red;
+  align-items: center;
+  padding: 10px 50px;
+  display: inline-block;
+
+}
+
+
+.registerlogin{
+  display: flex;
+  flex-direction: row;
+}
+
+
+.registersection{
+  /* background-color: #fff; */
+  background: -webkit-linear-gradient(65deg, #A683E3 50%, #E4E9FD 50%);
+   
+  /* border: 2px solid red; */
+  width: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
+  /* opacity: 0.8; */
+  
+  
+  
+}
+
+.btn-dark{
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.auth{
+  width: 34%;
+}
+
+
+input[type="email"] ,input[type="password"]{
+  opacity: 0.8;
+  border-radius: 0.3rem;
+  width: 25rem;
+}
+
+.btn-redit , .btn-github{
+  width: 12.5rem;
+  margin: 1rem;
+  font-size: 1.5rem;
+  border-radius: 0.3rem;
+}
+
+
+.active{
+  
+}
