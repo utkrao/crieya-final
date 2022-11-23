@@ -21,6 +21,7 @@
 }
  label.panel-label:hover {
 	 color: #892985;
+	 background-color: #bdc3c7;
 }
  #panels {
 	 background-color: white;
@@ -382,3 +383,114 @@
 	 font-weight: normal;
 }
  
+  .contact-form-wrapper .right-head
+  {
+	color: #892985;
+	text-shadow: none;
+	font-family: 'Bebas Neue', cursive;
+	font-size: 2.5rem;
+  }         
+  .contact-box {
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+	width: clamp(100px, 90%, 1000px);
+	margin: 80px 50px;
+	display: flex;
+	flex-wrap: wrap;
+	border-radius: 10px;
+  }
+  
+  .contact-links, .contact-form-wrapper {
+	width: 50%;
+	padding: 8% 5% 10% 5%;
+  }
+  .contact-form-wrapper .form-item
+  {
+	width: 100%;
+	margin-bottom: 20px;
+  }
+  .contact-form-wrapper input, textarea{
+	width:200%;
+	padding: 5px 10px;
+	outline: none;
+	border-radius: 5px;
+	border: 1px solid #787878;
+  }
+  .submit-btn
+  {
+	padding: 10px 20px;
+	background-color: #892985;
+	border-radius: 5px;
+	border: 2px solid #892985;
+	color: white;
+	cursor: pointer;
+  }
+  .submit-btn:hover
+  {
+	border: 2px solid black;
+	background-color: transparent;
+	color: #000;
+  }
+  
+  
+  .contact-links {
+	background:
+	  radial-gradient(
+		circle at 55% 92%, #892985 0 12%, transparent 12.2%
+	  ), 
+	  radial-gradient(
+		circle at 94% 72%, #892985 0 10%, transparent 10.2%
+	  ), 
+	  radial-gradient(
+		circle at 20% max(78%, 350px), #892985 0 7%, transparent 7.2%
+	  ), 
+	  radial-gradient(
+		circle at 0% 0%, #892985 0 40%, transparent 40.2%
+	  ), 
+	  #892985;
+	border-radius: 10px 0 0 10px;
+  }
+  
+  .contact-form-wrapper {
+	background-color: #fe8ffa;
+	border-radius: 5px 5px;
+	display: flex;
+	align-items: center;
+	justify-self: center;
+	width: 80%;
+  }
+  .links .link a
+  {
+	font-size: 2.5rem;
+	color:white;
+	text-decoration: none;
+  }
+
+
+  .filters h1 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+.filter-dd-style {
+    margin-top: 10px;
+}
+
+#dropdown-basic {
+    width: 212%;
+	height: 30px;
+    background-color: #fff;
+	border-radius: 5px;
+	border: 1px solid #787878;
+	color: #787878;
+    padding-right: 10px;
+    color: #000;
+    cursor: pointer;
+	margin-bottom: 10px;
+}
+
+#dropdown-basic option {
+    background-color: #fff;
+    color: #000;
+    font-size: 12px;
+}
