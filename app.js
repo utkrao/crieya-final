@@ -40,12 +40,41 @@ const userSchema = new mongoose.Schema ({
   secret: String
 });
 
+const facultySchema = new mongoose.Schema ({
+   first: String,
+   last:String,
+   email:String
+
+});
+
+const studentSchema = new mongoose.Schema ({
+  first: String,
+   last:String,
+   email:String
+});
+
+const industrypersonSchema = new mongoose.Schema ({
+  first: String,
+   last:String,
+   email:String
+
+});
+
 userSchema.plugin(passportLocalMongoose);
 userSchema.plugin(findOrCreate);
+// studentSchema.plugin(passportLocalMongoose);
+// studentSchema.plugin(findOrCreate);
 
 const User = new mongoose.model("User", userSchema);
+const Faculty = new mongoose.model("Faculty", facultySchema);
+const Student = new mongoose.model("Student", studentSchema);
+const Industryperson = new mongoose.model("Industryperson", industrypersonSchema);
+
+
 
 passport.use(User.createStrategy());
+// passport.use(Student.createStrategy());
+
 
 passport.serializeUser(function(user, done) {
   done(null, user.id);
@@ -180,9 +209,64 @@ app.get("/auth/google/secrets",
   
   });
   
+  app.post("/student" , function(req, res){
+    const student  = new Student({
+      first :req.body.first,
+      last:req.body.last,
+      email:req.body.email
+
+    })
+     student.save(function(err){
+      if(err){
+        console.log("bhai kuch galat hora");
+      }
+      else{
+        res.send("submitted ")
+      }
+
+     });
+
+  })
+
+  app.post("/faculty" , function(req, res){
+    const faculty  = new Faculty({
+      first :req.body.first,
+      last:req.body.last,
+      email:req.body.email
+
+    })
+     faculty.save(function(err){
+      if(err){
+        console.log("bhai kuch galat hora");
+      }
+      else{
+        res.send("submitted ")
+      }
+
+     });
+
+  })
+
+  app.post("/industryperson" , function(req, res){
+    const industryperson  = new Industryperson({
+      first :req.body.first,
+      last:req.body.last,
+      email:req.body.email
+
+    })
+     industryperson.save(function(err){
+      if(err){
+        console.log("bhai kuch galat hora");
+      }
+      else{
+        res.send("submitted ")
+      }
+
+     });
+
+  })
   
-  
-  
+
   
   
 
